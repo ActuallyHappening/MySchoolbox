@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  My Schoolbox Safari Extension
+//  Shared (Extension)
 //
 //  Created by Caleb Yates on 25/1/2023.
 //
@@ -12,7 +12,7 @@ let SFExtensionMessageKey = "message"
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
 
-	func beginRequest(with context: NSExtensionContext) {
+    func beginRequest(with context: NSExtensionContext) {
         let item = context.inputItems[0] as! NSExtensionItem
         let message = item.userInfo?[SFExtensionMessageKey]
         os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@", message as! CVarArg)
@@ -22,5 +22,5 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
 
         context.completeRequest(returningItems: [response], completionHandler: nil)
     }
-    
+
 }
