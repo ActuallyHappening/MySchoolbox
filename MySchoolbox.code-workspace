@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "my_schoolbox_app"
 		}
 	],
 	"settings": {}
