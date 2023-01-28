@@ -2,8 +2,8 @@
     "manifest_version": 3,
     "default_locale": "en",
 
-		"name": "My Schoolbox",
-		"description": "Style your schoolbox and add integrations with your timetable, chat, and more!",
+    "name": "__MSG_extension_name__",
+    "description": "__MSG_extension_description__",
     "version": "1.0",
 
     "icons": {
@@ -20,9 +20,7 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-				"matches": [
-					"https://schoolbox.emmanuel.qld.edu.au/*"
-				]
+        "matches": [ "*://example.com/*" ]
     }],
 
     "action": {

@@ -1,12 +1,14 @@
 //
 //  SafariWebExtensionHandler.swift
-//  My Schoolbox Safari Extension (iOS)
+//  Shared (Extension)
 //
 //  Created by Caleb Yates on 26/1/2023.
 //
 
 import SafariServices
 import os.log
+
+let SFExtensionMessageKey = "message"
 
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
 

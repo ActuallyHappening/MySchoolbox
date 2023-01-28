@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "my_schoolbox_app"
+		},
+		{
+			"path": "extension_scripts/Resources"
 		}
 	],
 	"settings": {}
