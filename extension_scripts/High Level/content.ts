@@ -1,3 +1,14 @@
+console.log("Static content script injected");
+
+// Inject firebase CDN script into head
+const dynamicScript = document.createElement('script');
+dynamicScript.src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js";
+// firebaseScript.type = "text/javascript";
+// set script type to 'module'
+dynamicScript.type = "module";
+document.head.appendChild(dynamicScript);
+
+/*
 import firebase from 'firebase';
 import firebaseui from 'firebaseui';
 // Import the functions you need from the SDKs you need
@@ -63,3 +74,4 @@ if (window.top === window) {
 } else {
 	console.warn("Injected scripe is not executing in iFrame :)");
 }
+*/
