@@ -12,6 +12,7 @@ rollup -c rollup.config.mjs
 # cp ./Build/content.js ../Resources/content.js
 
 # Commit auto-generated files
+git add ./Build/bundle.js
 git add ./Build/bundled.js
 git add ./Build/content.js
 git add package.json

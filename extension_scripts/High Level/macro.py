@@ -23,11 +23,12 @@ def build():
 class Handler(watchdog.events.FileSystemEventHandler):
 		def on_modified(self, event: watchdog.events.FileModifiedEvent):
 			# return super().on_modified(event)
-			if (not event.is_directory): return
+			if (event.is_directory): return
+
 			# if event src_path is content.ts or bundle.ts
 			if event.src_path.endswith('content.ts') or event.src_path.endswith('bundle.ts'):
 				build()
-			else: return
+			else: print('Not building file ' + event.src_path)
 
 if __name__ == "__main__":
 	# If first argument is 'increment' then increment package.json patch version
