@@ -59,5 +59,5 @@ const signIn = () => __awaiter(void 0, void 0, void 0, function* () {
         console.error("ERROR!", error, errorCode, errorMessage, email, credential);
     });
 });
-import { signInBtn } from './UI';
-signInBtn.addEventListener('click', signIn);
+import { UI_signInBtn } from './controllers/UI';
+UI_signInBtn.addEventListener('click', signIn);

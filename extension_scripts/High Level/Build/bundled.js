@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var version$3 = "1.0.7";
+    var version$3 = "1.0.8";
 
     /**
      * @license
@@ -8464,10 +8464,13 @@
     registerAuth("Browser" /* ClientPlatform.BROWSER */);
 
     const mainDiv = document.querySelector('.main');
+
     const signInBtn = document.createElement('button');
     signInBtn.innerText = "Sign in with Google";
     // Add btn as first child of main div
     mainDiv.insertBefore(signInBtn, mainDiv.firstChild);
+
+    const UI_signInBtn = signInBtn;
 
     var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
         function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -8523,6 +8526,6 @@
             console.error("ERROR!", error, errorCode, errorMessage, email, credential);
         });
     });
-    signInBtn.addEventListener('click', signIn);
+    UI_signInBtn.addEventListener('click', signIn);
 
 })();
