@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var version = "1.0.33";
+    var version = "1.0.34";
 
     const patch = version.split(".")[2];
     console.log("Static content script injected, patch:", patch, "version:", version);
