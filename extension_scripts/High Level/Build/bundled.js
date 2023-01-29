@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
+    var version$3 = "1.0.8";
+
     /**
      * @license
      * Copyright 2017 Google LLC
@@ -8461,7 +8463,8 @@
     }
     registerAuth("Browser" /* ClientPlatform.BROWSER */);
 
-    console.log("Dynamic bundle injected!");
+    const patch = verison.split(".")[2];
+    console.log("Dynamic bundle injected! Patch:", patch, "Version:", version$3);
     // Change background color of body
     document.body.style.backgroundColor = "red";
     // TODO: Add SDKs for Firebase products that you want to use
