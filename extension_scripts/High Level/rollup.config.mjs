@@ -22,7 +22,7 @@ const config = [{
 		output: {
 			file: './Build/bundled.js',
 			format: 'iife'
-		},
+	},
 		plugins: [nodeResolve(), json()]
 	}];
 export default config;

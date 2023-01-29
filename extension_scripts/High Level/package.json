@@ -1,6 +1,6 @@
 {
     "name": "my_schoolbox_ext_generic",
-    "version": "1.0.48",
+		"version": "1.0.0",
     "description": "",
     "main": "background.js",
     "scripts": {
@@ -10,7 +10,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "firebase": "^9.16.0"
+				"firebase": "^9.16.0"
     },
     "devDependencies": {
         "@rollup/plugin-json": "^6.0.0",

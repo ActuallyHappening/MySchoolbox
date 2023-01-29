@@ -1,4 +1,6 @@
-console.log("Dynamic bundle injected!");
+import { version } from "./package.json";
+const patch = version.split(".")[2];
+console.log("Dynamic bundle injected! Patch:", patch, "Version:", version);
 // Change background color of body
 document.body.style.backgroundColor = "red";
 // TODO: Add SDKs for Firebase products that you want to use
