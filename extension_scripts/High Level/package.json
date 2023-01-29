@@ -1,6 +1,6 @@
 {
     "name": "my_schoolbox_ext_generic",
-    "version": "1.0.43",
+    "version": "1.0.47",
     "description": "",
     "main": "background.js",
     "scripts": {
