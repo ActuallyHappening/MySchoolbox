@@ -1,4 +1,4 @@
-export const mainDiv = document.querySelector('.main')!
+import { mainDiv } from "../parser/parse"
 export const signInBtn = document.createElement('button')
 signInBtn.innerText = "Sign in with Google"
 
