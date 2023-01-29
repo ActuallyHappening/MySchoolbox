@@ -16,5 +16,5 @@ git add ./Build/bundled.js
 git add ./Build/content.js
 git add package.json
 git add ../Resources/content.js
-git commit -m "devops(automated): Commiting built files Build/bundled.js"
+git commit -m "devops(automated): Building & Bundling ..."
 git push
