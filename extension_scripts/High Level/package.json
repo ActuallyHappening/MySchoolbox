@@ -1,10 +1,11 @@
 {
     "name": "my_schoolbox_ext_generic",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "",
     "main": "background.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "./build.sh",
+        "dev": "python macro.py watch"
     },
     "keywords": [],
     "author": "",
