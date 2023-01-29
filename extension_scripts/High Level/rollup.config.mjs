@@ -4,7 +4,7 @@
  */
 const config = {
 	/* your config */
-	input: './content.js',
+	input: '../Build/content.js',
 	output: {
 		file: '../Resources/content.js',
 		// format: 'iife',

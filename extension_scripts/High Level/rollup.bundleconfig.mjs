@@ -1,9 +1,9 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
-	input: 'bundle.js',
+	input: '../Build/bundle.js',
 	output: {
-		file: './bundled.js',
+		file: '../Build/bundled.js',
 		format: 'iife'
 	},
 	plugins: [nodeResolve()]
