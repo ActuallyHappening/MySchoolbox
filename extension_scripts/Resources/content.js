@@ -1,9 +1,10 @@
 (function () {
     'use strict';
 
-    const VERSION = "1.0.69"; //! MACRO
-    const PATCH = VERSION.split(".")[2];
-    console.log("Static content script injected, patch:", PATCH, "Version:", VERSION);
+    var version = "1.0.6";
+
+    const patch = version.split(".")[2];
+    console.log("Static content script injected, patch:", patch, "version:", version);
     // Inject firebase CDN script into head
     const dynamicScript = document.createElement('script');
     dynamicScript.type = "text/javascript";
