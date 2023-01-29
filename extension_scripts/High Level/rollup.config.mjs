@@ -8,7 +8,7 @@ const config = {
 	output: {
 		file: '../Resources/content.js',
 		// format: 'iife',
-		format: 'es',
+		format: 'iife',
 	}
 };
 export default config;
