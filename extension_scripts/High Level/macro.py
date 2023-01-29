@@ -25,8 +25,8 @@ class Handler(watchdog.events.FileSystemEventHandler):
 			# return super().on_modified(event)
 			if (event.is_directory): return
 
-			# if event src_path is content.ts or bundle.ts
-			if event.src_path.endswith('content.ts') or event.src_path.endswith('bundle.ts'):
+			# if event is *.ts file
+			if event.src_path.endswith('.ts'):
 				build()
 			else: print('Not building file ' + event.src_path)
 
@@ -38,6 +38,7 @@ if __name__ == "__main__":
 			data = json.load(json_file)
 			# Increment patch version
 			data['version'] = increment_version(data['version'])
+		print('Incremented version to ' + data['version'])
 		# Write package.json
 		with open('package.json', 'w') as outfile:
 			json.dump(data, outfile, indent=4)

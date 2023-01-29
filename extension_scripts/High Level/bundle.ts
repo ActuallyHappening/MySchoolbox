@@ -38,7 +38,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 
 const provider = new GoogleAuthProvider();
 
-signInWithPopup(auth, provider)
+const signIn = async () => signInWithPopup(auth, provider)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
     const credential = GoogleAuthProvider.credentialFromResult(result)!;
@@ -59,3 +59,6 @@ signInWithPopup(auth, provider)
     // ...
 		console.error("ERROR!", error, errorCode, errorMessage, email, credential)
   });
+
+import { signInBtn } from './UI'
+signInBtn.addEventListener('click', signIn)
