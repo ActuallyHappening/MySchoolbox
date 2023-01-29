@@ -1,11 +1,12 @@
 // rollup.config.js
 
 import json from '@rollup/plugin-json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 /**
  * @type {import('rollup').RollupOptions}
  */
-const config = {
+const config = [{
 	/* your config */
 	input: './Build/content.js',
 	output: {
@@ -16,5 +17,12 @@ const config = {
 	plugins: [
 		json(),
 	]
-};
+}, {
+		input: './Build/bundle.js',
+		output: {
+			file: './Build/bundled.js',
+			format: 'iife'
+		},
+		plugins: [nodeResolve(), json()]
+	}];
 export default config;

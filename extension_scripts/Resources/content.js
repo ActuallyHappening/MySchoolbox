@@ -1,17 +1,22 @@
-import { version } from "./package.json";
-const patch = version.split(".")[2];
-console.log("Static content script injected, patch:", patch, "Version:", version);
-// Inject firebase CDN script into head
-const dynamicScript = document.createElement('script');
-dynamicScript.type = "text/javascript";
-const link = "https://raw.githubusercontent.com/ActuallyHappening/MySchoolbox/master/extension_scripts/High%20Level/Build/bundled.js";
-const content = fetch(link).then((response) => {
-    return response.text();
-}).then((text) => {
-    console.log("Dynamic script found:", text);
-    dynamicScript.innerHTML = text;
-    document.head.appendChild(dynamicScript);
-    return text;
-}).catch((error) => {
-    console.error("Dynamic script not found:", error);
-});
+(function () {
+    'use strict';
+
+    const VERSION = "1.0.69"; //! MACRO
+    const PATCH = VERSION.split(".")[2];
+    console.log("Static content script injected, patch:", PATCH, "Version:", VERSION);
+    // Inject firebase CDN script into head
+    const dynamicScript = document.createElement('script');
+    dynamicScript.type = "text/javascript";
+    const link = "https://raw.githubusercontent.com/ActuallyHappening/MySchoolbox/master/extension_scripts/High%20Level/Build/bundled.js";
+    fetch(link).then((response) => {
+        return response.text();
+    }).then((text) => {
+        console.log("Dynamic script found:", text);
+        dynamicScript.innerHTML = text;
+        document.head.appendChild(dynamicScript);
+        return text;
+    }).catch((error) => {
+        console.error("Dynamic script not found:", error);
+    });
+
+})();

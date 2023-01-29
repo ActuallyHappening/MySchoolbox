@@ -22,15 +22,14 @@ if __name__ == "__main__":
 			json.dump(data, outfile, indent=4)
 		
 		# Replace VERSION in content.ts
-		with open('content.ts', 'r') as file :
-			filedata = file.read()
-		# Replace the target string
-		# Find line of `//! MACRO` in filedata and replace line with `const VERSION = 'x.x.x';`
-		filedata.find('//! MACRO')
-		filedata = filedata.replace(filedata[filedata.find('//! MACRO'):filedata.('//! MACRO') + 20], 'const VERSION = \'' + data['version'] + '\'; //! MACRO')
+		# with open('content.ts', 'r') as file :
+		# 	filedata = file.read()
+		# # Replace the target string
+		# newLine = "export const VERSION = '" + data['version'] + "'; //! MACRO:VERSION"
+		# filedata = filedata.replace("export const VERSION = '.*'; //! MACRO:VERSION", newLine)
 
-		# Write the file out again
-		with open('content.ts', 'w') as file:
-			file.write(filedata)
+		# # Write the file out again
+		# with open('content.ts', 'w') as file:
+		# 	file.write(filedata)
 
 	

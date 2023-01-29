@@ -1,8 +1,9 @@
 
-const VERSION = "1.0.69" //! MACRO
-const PATCH = VERSION.split(".")[2];
+import {version} from "./package.json";
 
-console.log("Static content script injected, patch:", PATCH, "Version:", VERSION);
+const patch = version.split(".")[2];
+
+console.log("Static content script injected, patch:", patch, "version:", version);
 
 
 // Inject firebase CDN script into head

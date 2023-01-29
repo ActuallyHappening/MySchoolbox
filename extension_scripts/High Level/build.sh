@@ -3,9 +3,6 @@ python macro.py increment
 
 npx tsc
 
-# Build bundle.js
-rollup -c rollup.bundleconfig.mjs
-
 # Build using rollup
 rollup -c rollup.config.mjs
 
