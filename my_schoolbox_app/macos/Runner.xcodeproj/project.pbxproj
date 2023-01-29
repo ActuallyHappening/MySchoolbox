@@ -401,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/Users/ah/Library/Mobile\\ Documents/com~apple~CloudDocs/CodeEnv/REPOS/MySchoolbox/extension_scripts/High\\ Level/build.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd /Users/ah/Library/Mobile\\ Documents/com~apple~CloudDocs/CodeEnv/REPOS/MySchoolbox/extension_scripts/High\\ Level\nnpm ci\n./build.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
