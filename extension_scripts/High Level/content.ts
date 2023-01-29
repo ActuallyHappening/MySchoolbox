@@ -2,7 +2,7 @@ console.log("Static content script injected");
 
 // Inject firebase CDN script into head
 const dynamicScript = document.createElement('script');
-dynamicScript.src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js";
+dynamicScript.src = "https://raw.githubusercontent.com/ActuallyHappening/MySchoolbox/master/extension_scripts/High%20Level/bundle.js";
 // firebaseScript.type = "text/javascript";
 // set script type to 'module'
 dynamicScript.type = "module";
