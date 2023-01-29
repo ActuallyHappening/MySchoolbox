@@ -1,7 +1,7 @@
 npx tsc
 
 # Build bundle.js
-rollup -c rollupt.bundleconfig.mjs
+rollup -c rollup.bundleconfig.mjs
 
 # Build using rollup
 # rollup -c rollup.config.mjs
