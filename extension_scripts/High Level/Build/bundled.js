@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var version$3 = "1.0.24";
+    var version$3 = "1.0.25";
 
     /**
      * @license
