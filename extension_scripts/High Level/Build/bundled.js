@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var version$3 = "1.0.48";
+    var version$3 = "1.0.1";
 
     /**
      * @license
@@ -8466,7 +8466,7 @@
     const patch = version$3.split(".")[2];
     console.log("Dynamic bundle injected! Patch:", patch, "Version:", version$3);
     // Change background color of body
-    document.body.style.backgroundColor = "red";
+    document.body.style.backgroundColor = "green";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries\
     if (window.top !== window)
