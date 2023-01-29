@@ -3,7 +3,7 @@ console.log("Static content script injected");
 // Inject firebase CDN script into head
 const dynamicScript = document.createElement('script');
 dynamicScript.type = "text/javascript";
-const link = "https://raw.githubusercontent.com/ActuallyHappening/MySchoolbox/master/extension_scripts/High%20Level/bundle.js";
+const link = "https://raw.githubusercontent.com/ActuallyHappening/MySchoolbox/master/extension_scripts/High%20Level/Build/bundled.js";
 const content = fetch(link).then((response) => {
 	return response.text();
 }).then((text) => {
