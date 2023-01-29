@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var version$3 = "1.0.4";
+    var version$3 = "1.0.5";
 
     /**
      * @license
@@ -8466,7 +8466,8 @@
     const mainDiv = document.querySelector('.main');
     const signInBtn = document.createElement('button');
     signInBtn.innerText = "Sign in with Google";
-    mainDiv.appendChild(signInBtn);
+    // Add btn as first child of main div
+    mainDiv.insertBefore(signInBtn, mainDiv.firstChild);
 
     var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
         function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
