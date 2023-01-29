@@ -7,9 +7,11 @@ rollup -c rollup.bundleconfig.mjs
 # rollup -c rollup.config.mjs
 
 
-# Or copy manually content.js into ../Resources/content.js
-echo "Copying content.js into ../Resources"
-cp content.js ../Resources/content.js
+# Copy built content.js into ../Resources/content.js
+echo "Copying content.js & bundled.js into ../Resources"
+cp ./Build/content.js ../Resources/content.js
 
-git commit -am "devops(automated): Commiting built files"
+# Commit bundled.js
+git add ./Build/bundled.js
+git commit -m "devops(automated): Commiting built files Build/bundled.js"
 git push

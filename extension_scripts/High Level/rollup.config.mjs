@@ -4,9 +4,9 @@
  */
 const config = {
 	/* your config */
-	input: '../Build/content.js',
+	input: './Build/content.js',
 	output: {
-		file: '../Resources/content.js',
+		file: './Resources/content.js',
 		// format: 'iife',
 		format: 'iife',
 	}
