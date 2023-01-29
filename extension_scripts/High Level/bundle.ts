@@ -3,7 +3,7 @@ console.log("Dynamic bundle injected!")
 // Change background color of body
 document.body.style.backgroundColor = "red";
 
-import firebase from './node_modules/firebase';
+import * as firebase from './node_modules/firebase';
 import firebaseui from './node_modules/firebaseui';
 
 // Import the functions you need from the SDKs you need

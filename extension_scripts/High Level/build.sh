@@ -1,7 +1,7 @@
 npx tsc
 
 # Build bundle.js
-rollup ./bundle.js -o ./bundled.js --format iife --name "bundled"
+rollup -c rollupt.bundleconfig.mjs
 
 # Build using rollup
 # rollup -c rollup.config.mjs
