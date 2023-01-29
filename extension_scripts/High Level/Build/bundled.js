@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var version$3 = "1.0.8";
+    var version$3 = "1.0.9";
 
     /**
      * @license
@@ -8463,7 +8463,7 @@
     }
     registerAuth("Browser" /* ClientPlatform.BROWSER */);
 
-    const patch = verison.split(".")[2];
+    const patch = version$3.split(".")[2];
     console.log("Dynamic bundle injected! Patch:", patch, "Version:", version$3);
     // Change background color of body
     document.body.style.backgroundColor = "red";
