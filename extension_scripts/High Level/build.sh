@@ -1,15 +1,18 @@
+# Increment patch version
+python macro.py increment
+
 npx tsc
 
 # Build bundle.js
 rollup -c rollup.bundleconfig.mjs
 
 # Build using rollup
-# rollup -c rollup.config.mjs
+rollup -c rollup.config.mjs
 
 
 # Copy built content.js into ../Resources/content.js
-echo "Copying content.js & bundled.js into ../Resources"
-cp ./Build/content.js ../Resources/content.js
+# echo "Copying content.js & bundled.js into ../Resources"
+# cp ./Build/content.js ../Resources/content.js
 
 # Commit bundled.js
 git add ./Build/bundled.js

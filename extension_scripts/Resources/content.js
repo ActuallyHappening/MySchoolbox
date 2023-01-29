@@ -1,5 +1,6 @@
-"use strict";
-console.log("Static content script injected");
+import { version } from "./package.json";
+const patch = version.split(".")[2];
+console.log("Static content script injected, patch:", patch, "Version:", version);
 // Inject firebase CDN script into head
 const dynamicScript = document.createElement('script');
 dynamicScript.type = "text/javascript";

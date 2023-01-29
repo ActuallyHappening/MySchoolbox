@@ -1,20 +1,21 @@
 {
-	"name": "my_schoolbox_ext_generic",
-	"version": "1.0.0",
-	"description": "",
-	"main": "background.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"firebase": "^9.16.0"
-	},
-	"devDependencies": {
-		"@rollup/plugin-node-resolve": "^15.0.1",
-		"rollup": "^3.12.0",
-		"typescript": "^4.9.4"
-	}
+    "name": "my_schoolbox_ext_generic",
+    "version": "1.0.1",
+    "description": "",
+    "main": "background.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "firebase": "^9.16.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "rollup": "^3.12.0",
+        "typescript": "^4.9.4"
+    }
 }

@@ -1,4 +1,9 @@
-console.log("Static content script injected");
+
+const VERSION = "1.0.69" //! MACRO
+const PATCH = VERSION.split(".")[2];
+
+console.log("Static content script injected, patch:", PATCH, "Version:", VERSION);
+
 
 // Inject firebase CDN script into head
 const dynamicScript = document.createElement('script');
