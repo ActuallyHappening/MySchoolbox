@@ -2804,6 +2804,16 @@
             appName: auth.name
         });
     }
+    function _assertInstanceOf(auth, object, instance) {
+        const constructorInstance = instance;
+        if (!(object instanceof constructorInstance)) {
+            if (constructorInstance.name !== object.constructor.name) {
+                _fail(auth, "argument-error" /* AuthErrorCode.ARGUMENT_ERROR */);
+            }
+            throw _errorWithCustomMessage(auth, "argument-error" /* AuthErrorCode.ARGUMENT_ERROR */, `Type of ${object.constructor.name} does not match expected instance.` +
+                `Did you pass a reference from a different Auth SDK?`);
+        }
+    }
     function createErrorInternal(authOrCode, ...rest) {
         if (typeof authOrCode !== 'string') {
             const code = rest[0];
@@ -7324,6 +7334,42 @@
      */
     const _POLL_WINDOW_CLOSE_TIMEOUT = new Delay(2000, 10000);
     /**
+     * Authenticates a Firebase client using a popup-based OAuth authentication flow.
+     *
+     * @remarks
+     * If succeeds, returns the signed in user along with the provider's credential. If sign in was
+     * unsuccessful, returns an error object containing additional information about the error.
+     *
+     * @example
+     * ```javascript
+     * // Sign in using a popup.
+     * const provider = new FacebookAuthProvider();
+     * const result = await signInWithPopup(auth, provider);
+     *
+     * // The signed-in user info.
+     * const user = result.user;
+     * // This gives you a Facebook Access Token.
+     * const credential = provider.credentialFromResult(auth, result);
+     * const token = credential.accessToken;
+     * ```
+     *
+     * @param auth - The {@link Auth} instance.
+     * @param provider - The provider to authenticate. The provider has to be an {@link OAuthProvider}.
+     * Non-OAuth providers like {@link EmailAuthProvider} will throw an error.
+     * @param resolver - An instance of {@link PopupRedirectResolver}, optional
+     * if already supplied to {@link initializeAuth} or provided by {@link getAuth}.
+     *
+     *
+     * @public
+     */
+    async function signInWithPopup(auth, provider, resolver) {
+        const authInternal = _castAuth(auth);
+        _assertInstanceOf(auth, provider, FederatedAuthProvider);
+        const resolverInternal = _withDefaultResolver(authInternal, resolver);
+        const action = new PopupOperation(authInternal, "signInViaPopup" /* AuthEventType.SIGN_IN_VIA_POPUP */, provider, resolverInternal);
+        return action.executeNotNull();
+    }
+    /**
      * Popup event manager. Handles the popup's entire lifecycle; listens to auth
      * events
      *
@@ -8434,7 +8480,28 @@
         measurementId: "G-6HVEME3PWB"
     };
     const app = initializeApp(firebaseConfig);
-    getAuth(app);
-    // import { getAnalytics } from "firebase/analytics";
+    const auth = getAuth(app);
+    auth.useDeviceLanguage();
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+        .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        // ...
+        console.log("YAY!", result, "user:", user, token);
+    }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+        console.error("ERROR!", error, errorCode, errorMessage, email, credential);
+    });
 
 })();
