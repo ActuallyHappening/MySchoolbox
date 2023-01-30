@@ -20006,7 +20006,7 @@
         });
     }
 
-    var version = "1.0.15";
+    var version = "1.0.16";
 
     const patch = version.split(".")[2];
     console.log("Dynamic bundle injected! Patch:", patch, "Version:", version);
