@@ -8522,7 +8522,7 @@
         });
     });
 
-    var version = "1.0.12";
+    var version = "1.0.13";
 
     const patch = version.split(".")[2];
     console.log("Dynamic bundle injected! Patch:", patch, "Version:", version);
