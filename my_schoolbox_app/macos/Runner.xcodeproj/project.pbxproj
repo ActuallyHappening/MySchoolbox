@@ -27,8 +27,16 @@
 		33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F22044A3C60003C045 /* Assets.xcassets */; };
 		33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F42044A3C60003C045 /* MainMenu.xib */; };
 		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
-		D23D73E82987CC2400670CC5 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D73E72987CC2400670CC5 /* SafariWebExtensionHandler.swift */; };
-		D23D73FE2987CC2400670CC5 /* My Schoolbox Extension (Safari).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D23D73E52987CC2400670CC5 /* My Schoolbox Extension (Safari).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D274AA5D2987CDED00ECC591 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274AA5C2987CDED00ECC591 /* SafariWebExtensionHandler.swift */; };
+		D274AA602987CDED00ECC591 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D274AA5F2987CDED00ECC591 /* _locales */; };
+		D274AA622987CDED00ECC591 /* images in Resources */ = {isa = PBXBuildFile; fileRef = D274AA612987CDED00ECC591 /* images */; };
+		D274AA642987CDED00ECC591 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D274AA632987CDED00ECC591 /* manifest.json */; };
+		D274AA662987CDED00ECC591 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D274AA652987CDED00ECC591 /* background.js */; };
+		D274AA682987CDED00ECC591 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D274AA672987CDED00ECC591 /* content.js */; };
+		D274AA6A2987CDED00ECC591 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D274AA692987CDED00ECC591 /* popup.html */; };
+		D274AA6C2987CDED00ECC591 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D274AA6B2987CDED00ECC591 /* popup.css */; };
+		D274AA6E2987CDED00ECC591 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D274AA6D2987CDED00ECC591 /* popup.js */; };
+		D274AA732987CDED00ECC591 /* My Schoolbox Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D274AA5A2987CDED00ECC591 /* My Schoolbox Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +54,12 @@
 			remoteGlobalIDString = 33CC111A2044C6BA0003C045;
 			remoteInfo = FLX;
 		};
-		D23D73FC2987CC2400670CC5 /* PBXContainerItemProxy */ = {
+		D274AA712987CDED00ECC591 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 33CC10E52044A3C60003C045 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D23D73E42987CC2400670CC5;
-			remoteInfo = "My Schoolbox Extension (Safari)";
+			remoteGlobalIDString = D274AA592987CDED00ECC591;
+			remoteInfo = "My Schoolbox Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -72,7 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D23D73FE2987CC2400670CC5 /* My Schoolbox Extension (Safari).appex in Embed Foundation Extensions */,
+				D274AA732987CDED00ECC591 /* My Schoolbox Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,10 +106,18 @@
 		33E5194F232828860026EE4D /* AppInfo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppInfo.xcconfig; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		D23D73E52987CC2400670CC5 /* My Schoolbox Extension (Safari).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My Schoolbox Extension (Safari).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D23D73E72987CC2400670CC5 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		D23D73FA2987CC2400670CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D23D73FB2987CC2400670CC5 /* My_Schoolbox_Extension__Safari_.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = My_Schoolbox_Extension__Safari_.entitlements; sourceTree = "<group>"; };
+		D274AA5A2987CDED00ECC591 /* My Schoolbox Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My Schoolbox Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274AA5C2987CDED00ECC591 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		D274AA5F2987CDED00ECC591 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		D274AA612987CDED00ECC591 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		D274AA632987CDED00ECC591 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		D274AA652987CDED00ECC591 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		D274AA672987CDED00ECC591 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		D274AA692987CDED00ECC591 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		D274AA6B2987CDED00ECC591 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		D274AA6D2987CDED00ECC591 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		D274AA6F2987CDED00ECC591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D274AA702987CDED00ECC591 /* My_Schoolbox_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = My_Schoolbox_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D23D73E22987CC2400670CC5 /* Frameworks */ = {
+		D274AA572987CDED00ECC591 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -154,7 +170,7 @@
 				33FAB671232836740065AC1E /* Runner */,
 				33CEB47122A05771004F2AC0 /* Flutter */,
 				331C80D6294CF71000263BE5 /* RunnerTests */,
-				D23D73E62987CC2400670CC5 /* My Schoolbox Extension (Safari) */,
+				D274AA5B2987CDED00ECC591 /* My Schoolbox Extension */,
 				33CC10EE2044A3C60003C045 /* Products */,
 				D73912EC22F37F3D000D13A0 /* Frameworks */,
 			);
@@ -165,7 +181,7 @@
 			children = (
 				33CC10ED2044A3C60003C045 /* my_schoolbox_app.app */,
 				331C80D5294CF71000263BE5 /* RunnerTests.xctest */,
-				D23D73E52987CC2400670CC5 /* My Schoolbox Extension (Safari).appex */,
+				D274AA5A2987CDED00ECC591 /* My Schoolbox Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,14 +221,30 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
-		D23D73E62987CC2400670CC5 /* My Schoolbox Extension (Safari) */ = {
+		D274AA5B2987CDED00ECC591 /* My Schoolbox Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D23D73E72987CC2400670CC5 /* SafariWebExtensionHandler.swift */,
-				D23D73FA2987CC2400670CC5 /* Info.plist */,
-				D23D73FB2987CC2400670CC5 /* My_Schoolbox_Extension__Safari_.entitlements */,
+				D274AA5C2987CDED00ECC591 /* SafariWebExtensionHandler.swift */,
+				D274AA6F2987CDED00ECC591 /* Info.plist */,
+				D274AA702987CDED00ECC591 /* My_Schoolbox_Extension.entitlements */,
+				D274AA5E2987CDED00ECC591 /* Resources */,
 			);
-			path = "My Schoolbox Extension (Safari)";
+			path = "My Schoolbox Extension";
+			sourceTree = "<group>";
+		};
+		D274AA5E2987CDED00ECC591 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D274AA5F2987CDED00ECC591 /* _locales */,
+				D274AA612987CDED00ECC591 /* images */,
+				D274AA632987CDED00ECC591 /* manifest.json */,
+				D274AA652987CDED00ECC591 /* background.js */,
+				D274AA672987CDED00ECC591 /* content.js */,
+				D274AA692987CDED00ECC591 /* popup.html */,
+				D274AA6B2987CDED00ECC591 /* popup.css */,
+				D274AA6D2987CDED00ECC591 /* popup.js */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D73912EC22F37F3D000D13A0 /* Frameworks */ = {
@@ -258,28 +290,28 @@
 			);
 			dependencies = (
 				33CC11202044C79F0003C045 /* PBXTargetDependency */,
-				D23D73FD2987CC2400670CC5 /* PBXTargetDependency */,
+				D274AA722987CDED00ECC591 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 33CC10ED2044A3C60003C045 /* my_schoolbox_app.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D23D73E42987CC2400670CC5 /* My Schoolbox Extension (Safari) */ = {
+		D274AA592987CDED00ECC591 /* My Schoolbox Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D23D74032987CC2400670CC5 /* Build configuration list for PBXNativeTarget "My Schoolbox Extension (Safari)" */;
+			buildConfigurationList = D274AA742987CDED00ECC591 /* Build configuration list for PBXNativeTarget "My Schoolbox Extension" */;
 			buildPhases = (
-				D23D73E12987CC2400670CC5 /* Sources */,
-				D23D73E22987CC2400670CC5 /* Frameworks */,
-				D23D73E32987CC2400670CC5 /* Resources */,
+				D274AA562987CDED00ECC591 /* Sources */,
+				D274AA572987CDED00ECC591 /* Frameworks */,
+				D274AA582987CDED00ECC591 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "My Schoolbox Extension (Safari)";
-			productName = "My Schoolbox Extension (Safari)";
-			productReference = D23D73E52987CC2400670CC5 /* My Schoolbox Extension (Safari).appex */;
+			name = "My Schoolbox Extension";
+			productName = "My Schoolbox Extension";
+			productReference = D274AA5A2987CDED00ECC591 /* My Schoolbox Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +342,7 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
 					};
-					D23D73E42987CC2400670CC5 = {
+					D274AA592987CDED00ECC591 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -331,7 +363,7 @@
 				33CC10EC2044A3C60003C045 /* Runner */,
 				331C80D4294CF70F00263BE5 /* RunnerTests */,
 				33CC111A2044C6BA0003C045 /* Flutter Assemble */,
-				D23D73E42987CC2400670CC5 /* My Schoolbox Extension (Safari) */,
+				D274AA592987CDED00ECC591 /* My Schoolbox Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -353,10 +385,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D23D73E32987CC2400670CC5 /* Resources */ = {
+		D274AA582987CDED00ECC591 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D274AA662987CDED00ECC591 /* background.js in Resources */,
+				D274AA6C2987CDED00ECC591 /* popup.css in Resources */,
+				D274AA6A2987CDED00ECC591 /* popup.html in Resources */,
+				D274AA622987CDED00ECC591 /* images in Resources */,
+				D274AA642987CDED00ECC591 /* manifest.json in Resources */,
+				D274AA602987CDED00ECC591 /* _locales in Resources */,
+				D274AA682987CDED00ECC591 /* content.js in Resources */,
+				D274AA6E2987CDED00ECC591 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +462,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D23D73E12987CC2400670CC5 /* Sources */ = {
+		D274AA562987CDED00ECC591 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23D73E82987CC2400670CC5 /* SafariWebExtensionHandler.swift in Sources */,
+				D274AA5D2987CDED00ECC591 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,10 +483,10 @@
 			target = 33CC111A2044C6BA0003C045 /* Flutter Assemble */;
 			targetProxy = 33CC111F2044C79F0003C045 /* PBXContainerItemProxy */;
 		};
-		D23D73FD2987CC2400670CC5 /* PBXTargetDependency */ = {
+		D274AA722987CDED00ECC591 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D23D73E42987CC2400670CC5 /* My Schoolbox Extension (Safari) */;
-			targetProxy = D23D73FC2987CC2400670CC5 /* PBXContainerItemProxy */;
+			target = D274AA592987CDED00ECC591 /* My Schoolbox Extension */;
+			targetProxy = D274AA712987CDED00ECC591 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -735,7 +775,7 @@
 			};
 			name = Release;
 		};
-		D23D74002987CC2400670CC5 /* Debug */ = {
+		D274AA752987CDED00ECC591 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -747,14 +787,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Extension (Safari)/My_Schoolbox_Extension__Safari_.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Extension/My_Schoolbox_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Schoolbox Extension (Safari)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Extension (Safari)";
+				INFOPLIST_FILE = "My Schoolbox Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -769,7 +809,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Extension--Safari-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -777,7 +817,7 @@
 			};
 			name = Debug;
 		};
-		D23D74012987CC2400670CC5 /* Release */ = {
+		D274AA762987CDED00ECC591 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -789,14 +829,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Extension (Safari)/My_Schoolbox_Extension__Safari_.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Extension/My_Schoolbox_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Schoolbox Extension (Safari)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Extension (Safari)";
+				INFOPLIST_FILE = "My Schoolbox Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -810,7 +850,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Extension--Safari-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -818,7 +858,7 @@
 			};
 			name = Release;
 		};
-		D23D74022987CC2400670CC5 /* Profile */ = {
+		D274AA772987CDED00ECC591 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -830,14 +870,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Extension (Safari)/My_Schoolbox_Extension__Safari_.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Extension/My_Schoolbox_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Schoolbox Extension (Safari)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Extension (Safari)";
+				INFOPLIST_FILE = "My Schoolbox Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -851,7 +891,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Extension--Safari-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -902,12 +942,12 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D23D74032987CC2400670CC5 /* Build configuration list for PBXNativeTarget "My Schoolbox Extension (Safari)" */ = {
+		D274AA742987CDED00ECC591 /* Build configuration list for PBXNativeTarget "My Schoolbox Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D23D74002987CC2400670CC5 /* Debug */,
-				D23D74012987CC2400670CC5 /* Release */,
-				D23D74022987CC2400670CC5 /* Profile */,
+				D274AA752987CDED00ECC591 /* Debug */,
+				D274AA762987CDED00ECC591 /* Release */,
+				D274AA772987CDED00ECC591 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
