@@ -1,4 +1,5 @@
-import { exec } from "./firestore/auth";
+import { exec as exec_auth } from "./firestore/auth";
+import { exec as exec_firestore } from "./firestore/firestore";
 import {version} from "./package.json";
 const patch = version.split(".")[2];
 
@@ -12,4 +13,5 @@ document.body.style.backgroundColor = "green";
 
 if (window.top !== window) throw new Error("This script should only be injected into the top window");
 
-exec();
+exec_auth();
+exec_firestore();
