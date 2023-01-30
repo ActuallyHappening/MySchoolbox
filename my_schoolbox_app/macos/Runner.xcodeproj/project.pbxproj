@@ -21,37 +21,28 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		331C80D8294CF71000263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C80D7294CF71000263BE5 /* RunnerTests.swift */; };
 		335BBD1B22A9A15E00E9071D /* GeneratedPluginRegistrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */; };
 		33CC10F12044A3C60003C045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC10F02044A3C60003C045 /* AppDelegate.swift */; };
 		33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F22044A3C60003C045 /* Assets.xcassets */; };
 		33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F42044A3C60003C045 /* MainMenu.xib */; };
 		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
-		E076114C29821BC2009D6AB9 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E076114B29821BC2009D6AB9 /* SafariWebExtensionHandler.swift */; };
-		E076114F29821BC2009D6AB9 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = E076114E29821BC2009D6AB9 /* _locales */; };
-		E076115129821BC2009D6AB9 /* images in Resources */ = {isa = PBXBuildFile; fileRef = E076115029821BC2009D6AB9 /* images */; };
-		E076115329821BC2009D6AB9 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E076115229821BC2009D6AB9 /* manifest.json */; };
-		E076115529821BC2009D6AB9 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = E076115429821BC2009D6AB9 /* background.js */; };
-		E076115729821BC2009D6AB9 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = E076115629821BC2009D6AB9 /* content.js */; };
-		E076115929821BC2009D6AB9 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = E076115829821BC2009D6AB9 /* popup.html */; };
-		E076115B29821BC2009D6AB9 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = E076115A29821BC2009D6AB9 /* popup.css */; };
-		E076115D29821BC2009D6AB9 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = E076115C29821BC2009D6AB9 /* popup.js */; };
-		E076116229821BC2009D6AB9 /* My Schoolbox Safari Extension (macOS).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E076114929821BC1009D6AB9 /* My Schoolbox Safari Extension (macOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		331C80D9294CF71000263BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CC10E52044A3C60003C045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CC10EC2044A3C60003C045;
+			remoteInfo = Runner;
+		};
 		33CC111F2044C79F0003C045 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 33CC10E52044A3C60003C045 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 33CC111A2044C6BA0003C045;
 			remoteInfo = FLX;
-		};
-		E076116029821BC2009D6AB9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33CC10E52044A3C60003C045 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E076114829821BC1009D6AB9;
-			remoteInfo = "My Schoolbox Safari Extension (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,23 +57,14 @@
 			name = "Bundle Framework";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E076116329821BC2009D6AB9 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				E076116229821BC2009D6AB9 /* My Schoolbox Safari Extension (macOS).appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		331C80D5294CF71000263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		331C80D7294CF71000263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		333000ED22D3DE5D00554162 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedPluginRegistrant.swift; sourceTree = "<group>"; };
-		33CC10ED2044A3C60003C045 /* my_schoolbox_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_schoolbox_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CC10ED2044A3C60003C045 /* my_schoolbox_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my_schoolbox_app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CC10F02044A3C60003C045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33CC10F22044A3C60003C045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Runner/Assets.xcassets; sourceTree = "<group>"; };
 		33CC10F52044A3C60003C045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -96,29 +78,17 @@
 		33E5194F232828860026EE4D /* AppInfo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppInfo.xcconfig; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		E076114929821BC1009D6AB9 /* My Schoolbox Safari Extension (macOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My Schoolbox Safari Extension (macOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E076114B29821BC2009D6AB9 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		E076114E29821BC2009D6AB9 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
-		E076115029821BC2009D6AB9 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
-		E076115229821BC2009D6AB9 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		E076115429821BC2009D6AB9 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		E076115629821BC2009D6AB9 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		E076115829821BC2009D6AB9 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		E076115A29821BC2009D6AB9 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		E076115C29821BC2009D6AB9 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
-		E076115E29821BC2009D6AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E076115F29821BC2009D6AB9 /* My_Schoolbox_Safari_Extension__macOS_.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = My_Schoolbox_Safari_Extension__macOS_.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		33CC10EA2044A3C60003C045 /* Frameworks */ = {
+		331C80D2294CF70F00263BE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E076114629821BC1009D6AB9 /* Frameworks */ = {
+		33CC10EA2044A3C60003C045 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331C80D6294CF71000263BE5 /* RunnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				331C80D7294CF71000263BE5 /* RunnerTests.swift */,
+			);
+			path = RunnerTests;
+			sourceTree = "<group>";
+		};
 		33BA886A226E78AF003329D5 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +122,7 @@
 			children = (
 				33FAB671232836740065AC1E /* Runner */,
 				33CEB47122A05771004F2AC0 /* Flutter */,
-				E076114A29821BC2009D6AB9 /* My Schoolbox Safari Extension (macOS) */,
+				331C80D6294CF71000263BE5 /* RunnerTests */,
 				33CC10EE2044A3C60003C045 /* Products */,
 				D73912EC22F37F3D000D13A0 /* Frameworks */,
 			);
@@ -154,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				33CC10ED2044A3C60003C045 /* my_schoolbox_app.app */,
-				E076114929821BC1009D6AB9 /* My Schoolbox Safari Extension (macOS).appex */,
+				331C80D5294CF71000263BE5 /* RunnerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,35 +179,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E076114A29821BC2009D6AB9 /* My Schoolbox Safari Extension (macOS) */ = {
-			isa = PBXGroup;
-			children = (
-				E076114B29821BC2009D6AB9 /* SafariWebExtensionHandler.swift */,
-				E076115E29821BC2009D6AB9 /* Info.plist */,
-				E076115F29821BC2009D6AB9 /* My_Schoolbox_Safari_Extension__macOS_.entitlements */,
-				E076114D29821BC2009D6AB9 /* Resources */,
-			);
-			path = "My Schoolbox Safari Extension (macOS)";
-			sourceTree = "<group>";
-		};
-		E076114D29821BC2009D6AB9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E076114E29821BC2009D6AB9 /* _locales */,
-				E076115029821BC2009D6AB9 /* images */,
-				E076115229821BC2009D6AB9 /* manifest.json */,
-				E076115429821BC2009D6AB9 /* background.js */,
-				E076115629821BC2009D6AB9 /* content.js */,
-				E076115829821BC2009D6AB9 /* popup.html */,
-				E076115A29821BC2009D6AB9 /* popup.css */,
-				E076115C29821BC2009D6AB9 /* popup.js */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		331C80D4294CF70F00263BE5 /* RunnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331C80DE294CF71000263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */;
+			buildPhases = (
+				331C80D1294CF70F00263BE5 /* Sources */,
+				331C80D2294CF70F00263BE5 /* Frameworks */,
+				331C80D3294CF70F00263BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331C80DA294CF71000263BE5 /* PBXTargetDependency */,
+			);
+			name = RunnerTests;
+			productName = RunnerTests;
+			productReference = 331C80D5294CF71000263BE5 /* RunnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		33CC10EC2044A3C60003C045 /* Runner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33CC10FB2044A3C60003C045 /* Build configuration list for PBXNativeTarget "Runner" */;
@@ -239,35 +209,16 @@
 				33CC10EB2044A3C60003C045 /* Resources */,
 				33CC110E2044A8840003C045 /* Bundle Framework */,
 				3399D490228B24CF009A79C7 /* ShellScript */,
-				E076116329821BC2009D6AB9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				33CC11202044C79F0003C045 /* PBXTargetDependency */,
-				E076116129821BC2009D6AB9 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 33CC10ED2044A3C60003C045 /* my_schoolbox_app.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E076114829821BC1009D6AB9 /* My Schoolbox Safari Extension (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E076116729821BC2009D6AB9 /* Build configuration list for PBXNativeTarget "My Schoolbox Safari Extension (macOS)" */;
-			buildPhases = (
-				E076114529821BC1009D6AB9 /* Sources */,
-				E076114629821BC1009D6AB9 /* Frameworks */,
-				E076114729821BC1009D6AB9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "My Schoolbox Safari Extension (macOS)";
-			productName = "My Schoolbox Safari Extension (macOS)";
-			productReference = E076114929821BC1009D6AB9 /* My Schoolbox Safari Extension (macOS).appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -275,10 +226,14 @@
 		33CC10E52044A3C60003C045 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					331C80D4294CF70F00263BE5 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 33CC10EC2044A3C60003C045;
+					};
 					33CC10EC2044A3C60003C045 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1100;
@@ -292,9 +247,6 @@
 					33CC111A2044C6BA0003C045 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
-					};
-					E076114829821BC1009D6AB9 = {
-						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -312,34 +264,26 @@
 			projectRoot = "";
 			targets = (
 				33CC10EC2044A3C60003C045 /* Runner */,
+				331C80D4294CF70F00263BE5 /* RunnerTests */,
 				33CC111A2044C6BA0003C045 /* Flutter Assemble */,
-				E076114829821BC1009D6AB9 /* My Schoolbox Safari Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		331C80D3294CF70F00263BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33CC10EB2044A3C60003C045 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
 				33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E076114729821BC1009D6AB9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E076115529821BC2009D6AB9 /* background.js in Resources */,
-				E076115B29821BC2009D6AB9 /* popup.css in Resources */,
-				E076115929821BC2009D6AB9 /* popup.html in Resources */,
-				E076115129821BC2009D6AB9 /* images in Resources */,
-				E076115329821BC2009D6AB9 /* manifest.json in Resources */,
-				E076114F29821BC2009D6AB9 /* _locales in Resources */,
-				E076115729821BC2009D6AB9 /* content.js in Resources */,
-				E076115D29821BC2009D6AB9 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +331,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		331C80D1294CF70F00263BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331C80D8294CF71000263BE5 /* RunnerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33CC10E92044A3C60003C045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,26 +349,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E076114529821BC1009D6AB9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E076114C29821BC2009D6AB9 /* SafariWebExtensionHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		331C80DA294CF71000263BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33CC10EC2044A3C60003C045 /* Runner */;
+			targetProxy = 331C80D9294CF71000263BE5 /* PBXContainerItemProxy */;
+		};
 		33CC11202044C79F0003C045 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 33CC111A2044C6BA0003C045 /* Flutter Assemble */;
 			targetProxy = 33CC111F2044C79F0003C045 /* PBXContainerItemProxy */;
-		};
-		E076116129821BC2009D6AB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E076114829821BC1009D6AB9 /* My Schoolbox Safari Extension (macOS) */;
-			targetProxy = E076116029821BC2009D6AB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +377,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		331C80DB294CF71000263BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mySchoolboxApp.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/my_schoolbox_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/my_schoolbox_app";
+			};
+			name = Debug;
+		};
+		331C80DC294CF71000263BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mySchoolboxApp.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/my_schoolbox_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/my_schoolbox_app";
+			};
+			name = Release;
+		};
+		331C80DD294CF71000263BE5 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mySchoolboxApp.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/my_schoolbox_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/my_schoolbox_app";
+			};
+			name = Profile;
+		};
 		338D0CE9231458BD00FA5F75 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
@@ -483,7 +469,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
@@ -610,7 +595,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
@@ -631,7 +615,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Release.entitlements;
@@ -663,133 +646,19 @@
 			};
 			name = Release;
 		};
-		E076116429821BC2009D6AB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Safari Extension (macOS)/My_Schoolbox_Safari_Extension__macOS_.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Schoolbox Safari Extension (macOS)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Safari Extension (macOS)";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Safari-Extension--macOS-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		E076116529821BC2009D6AB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Safari Extension (macOS)/My_Schoolbox_Safari_Extension__macOS_.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Schoolbox Safari Extension (macOS)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Safari Extension (macOS)";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Safari-Extension--macOS-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		E076116629821BC2009D6AB9 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = "My Schoolbox Safari Extension (macOS)/My_Schoolbox_Safari_Extension__macOS_.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Schoolbox Safari Extension (macOS)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Schoolbox Safari Extension (macOS)";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.mySchoolboxApp.My-Schoolbox-Safari-Extension--macOS-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Profile;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		331C80DE294CF71000263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331C80DB294CF71000263BE5 /* Debug */,
+				331C80DC294CF71000263BE5 /* Release */,
+				331C80DD294CF71000263BE5 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33CC10E82044A3C60003C045 /* Build configuration list for PBXProject "Runner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -816,16 +685,6 @@
 				33CC111C2044C6BA0003C045 /* Debug */,
 				33CC111D2044C6BA0003C045 /* Release */,
 				338D0CEB231458BD00FA5F75 /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E076116729821BC2009D6AB9 /* Build configuration list for PBXNativeTarget "My Schoolbox Safari Extension (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E076116429821BC2009D6AB9 /* Debug */,
-				E076116529821BC2009D6AB9 /* Release */,
-				E076116629821BC2009D6AB9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
