@@ -19996,14 +19996,17 @@
     const db = oh(app);
     function exec() {
         return __awaiter(this, void 0, void 0, function* () {
-            const querySnapshot = yield Bl(Ta(db, "_test"));
+            console.log("execing firestore.ts");
+            const querySnapshot = yield Bl(Ta(db, "_testing"));
             querySnapshot.forEach(doc => {
-                console.log("DOC:", `${doc.id} == `, doc.data);
+                console.log("DOC:", `${doc.id} == `, doc.data());
+                if (doc.id == 'background')
+                    document.body.style.backgroundColor = doc.data()['color'];
             });
         });
     }
 
-    var version = "1.0.14";
+    var version = "1.0.15";
 
     const patch = version.split(".")[2];
     console.log("Dynamic bundle injected! Patch:", patch, "Version:", version);
